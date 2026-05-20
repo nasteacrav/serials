@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seriale TV</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Seriale TV</div>
+
+        <div class="menu" id="menu">
+            <a href="index.html">Acasă</a>
+            <a href="supernatural.html">Supernatural</a>
+            <a href="riverdale.html">Riverdale</a>
+            <a href="euphoria.html">Euphoria</a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Bine ai venit!</h1>
+    <p>Descoperă cele mai populare seriale.</p>
+</section>
+
+<section class="container">
+
+    <div class="card">
+        <img src="../img/Supernatural.avif" alt="Supernatural">
+        <div class="card-content">
+            <h2>Supernatural</h2>
+            <p>Frații Winchester vânează creaturi supranaturale.</p>
+            <a href="supernatural.html">
+                <button>Vezi mai mult</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="../img/riverdale.jpg" alt="Riverdale">
+        <div class="card-content">
+            <h2>Riverdale</h2>
+            <p>Mistere și drame într-un oraș aparent liniștit.</p>
+            <a href="riverdale.html">
+                <button>Vezi mai mult</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="../img/eyph.jpg" alt="Euphoria">
+        <div class="card-content">
+            <h2>Euphoria</h2>
+            <p>Viața adolescenților și problemele moderne.</p>
+            <a href="euphoria.html">
+                <button>Vezi mai mult</button>
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<section class="quiz">
+
+    <h2>Quiz despre Seriale</h2>
+
+    <div class="question">
+        <p>1. Cum se numesc frații din Supernatural?</p>
+
+        <button onclick="correct()">Dean și Sam</button>
+        <button onclick="wrong()">Archie și Jughead</button>
+        <button onclick="wrong()">Rue și Nate</button>
+    </div>
+
+    <div class="question">
+        <p>2. Din ce serial face parte Betty Cooper?</p>
+
+        <button onclick="wrong()">Euphoria</button>
+        <button onclick="correct()">Riverdale</button>
+        <button onclick="wrong()">Supernatural</button>
+    </div>
+
+    <div class="question">
+        <p>3. Cine este personaj principal în Euphoria?</p>
+
+        <button onclick="correct()">Rue Bennett</button>
+        <button onclick="wrong()">Dean Winchester</button>
+        <button onclick="wrong()">Veronica Lodge</button>
+    </div>
+
+    <h3 id="result"></h3>
+
+</section>
+
+<footer>
+    <div class="footer-content">
+        <h3>Seriale TV</h3>
+        <p>Site realizat despre serialele Supernatural, Riverdale și Euphoria.</p>
+
+        <div class="socials">
+            <a href="https://www.youtube.com/">YouTube</a>
+            <a href="https://www.netflix.com/">Netflix</a>
+            <a href="https://www.hbo.com/">HBO</a>
+        </div>
+
+        <p class="copy">© 2026 Toate drepturile rezervate.</p>
+    </div>
+</footer>
+<script src="../js/js.js"></script>
+
+</body>
+</html>
